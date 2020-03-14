@@ -10,11 +10,18 @@
 
 def generated(range)
   generate = []
+  num = rand(range)
   #randの中の数を全部表示する
-  generate.each do |num|
-    #表示した数を配列にいれる
-    generate.push(num)
+  num.each do |num|
+    puts num
   end
+  #表示した数を配列にいれる
+  generate.push(num)
 end
 
 #配列の中から数字を取り出し、取り出したらその数字を配列の中から消去する
+
+puts generated(1..3)
+puts generated(1..3)
+puts generated(1..3)
+puts generated(1..3)
